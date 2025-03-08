@@ -1,0 +1,196 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #00d4ff;
+}
+.cta-btn {
+  background-color: #00d4ff;
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.cta-btn:hover {
+  background-color: #00aacc;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  /* background: linear-gradient(135deg, #00d4ff, #7f00ff); */
+  background: linear-gradient(135deg, #339be5, #ad99c1);
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* web3 Section */
+.web3 {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+.web3 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.web3-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.web3-item {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.web3-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #fff;
+  color: #222;
+}
+.web3-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.web3-item p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Docs Section */
+.docs {
+  padding: 50px 20px;
+  background-color: #121212;
+  text-align: center;
+}
+.docs h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.docs a {
+  color: #00d4ff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.docs a:hover {
+  color: #00aacc;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #777;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #222;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
